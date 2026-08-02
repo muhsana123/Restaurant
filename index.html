@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoria - Fine Dining Restaurant</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation CSS -->
+
+</head>
+<body>
+    <!-- Header / Navbar Section -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">Savoria<span>.</span></a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#reservation">Reservation</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-btns">
+                <a href="#reservation" class="btn btn-primary">Book Table</a>
+                <button class="mobile-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="sub-title">Welcome to Savoria</span>
+            <h1>Delicious Food For Every Occasion</h1>
+            <p>Experience the perfect blend of fresh ingredients, culinary passion, and exceptional taste served directly to your table.</p>
+            
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#reservation" class="btn btn-secondary">Book a Table</a>
+            </div>
+        </div>
+    </section>
+<!-- About Us Section -->
+    <section class="about section-padding" id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior">
+                <div class="experience-badge">
+                    <span class="years">12+</span>
+                    <span class="text">Years Of Experience</span>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <span class="sub-title">About Our Restaurant</span>
+                <h2>We Serve Quality & Authentic Culinary Delights</h2>
+                <p>Welcome to Savoria, where every dish tells a story of passion, tradition, and flavor. Founded with a vision to deliver unmatched culinary excellence, our team of dedicated chefs uses only the freshest, locally-sourced ingredients.</p>
+                <p>Whether you're looking for a cozy dinner with family or a place to celebrate special moments, our warm ambiance and exceptional menu guarantee an unforgettable dining experience.</p>
+                
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Fresh Ingredients</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Master Chefs</span>
+                    </div>
+                </div>
+
+                <a href="#menu" class="btn btn-primary">Discover Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Why Choose Us Section -->
+    <section class="features section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Why Choose Us</span>
+                <h2>Our Special Services</h2>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature Card 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <h3>Quality Food</h3>
+                    <p>We source fresh, organic ingredients to prepare meals that are both healthy and delicious.</p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-user-ninja"></i>
+                    </div>
+                    <h3>Expert Chefs</h3>
+                    <p>Our experienced chefs craft each recipe with care, expertise, and culinary mastery.</p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your favorite meals delivered hot and fresh directly to your doorstep in no time.</p>
+                </div>
+
+                <!-- Feature Card 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                    <h3>Easy Reservation</h3>
+                    <p>Reserve your table online hassle-free with just a few clicks for any occasion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Food Menu Section -->
+    <section class="menu section-padding" id="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">Specialities</span>
+                <h2>Our Delicious Menu</h2>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Dishes</button>
+                <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+                <button class="filter-btn" data-filter="lunch">Lunch</button>
+                <button class="filter-btn" data-filter="dinner">Dinner</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-item" data-category="breakfast">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=600&q=80" alt="Avocado Toast">
+                        <span class="price">$12.99</span>
+                    </div>
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h3>Classic Avocado Toast</h3>
+                        </div>
+                        <p>Fresh poached eggs, smashed avocado, cherry tomatoes on toasted sourdough.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-item" data-category="lunch">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Gourmet Burger">
+                        <span class="price">$16.50</span>
+                    </div>
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h3>Angus Beef Burger</h3>
+                        </div>
+                        <p>Juicy Angus beef patty, cheddar cheese, caramelized onions, crisp lettuce.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-item" data-category="dinner">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Grilled Steak">
+                        <span class="price">$28.00</span>
+                    </div>
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h3>Ribeye Steak</h3>
+                        </div>
+                        <p>Prime ribeye steak served with rosemary butter, garlic mash, and roasted veggies.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-item" data-category="lunch">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Pasta">
+                        <span class="price">$18.25</span>
+                    </div>
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h3>Creamy Alfredo Pasta</h3>
+                        </div>
+                        <p>Fettuccine pasta tossed in rich parmesan cream sauce with grilled chicken breast.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Mojito Drink">
+                        <span class="price">$8.50</span>
+                    </div>
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h3>Fresh Mint Mojito</h3>
+                        </div>
+                        <p>Refreshing blend of fresh lime juice, crushed mint leaves, soda water, and ice.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-item" data-category="dinner">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pepperoni Pizza">
+                        <span class="price">$22.00</span>
+                    </div>
+                    <div class="menu-details">
+                        <div class="menu-title-row">
+                            <h3>Wood-Fired Pizza</h3>
+                        </div>
+                        <p>Artisanal crust, San Marzano tomato sauce, fresh mozzarella, and pepperoni.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation section-padding" id="reservation">
+        <div class="container">
+            <div class="reservation-box">
+                <div class="section-header text-center">
+                    <span class="sub-title" style="color: var(--primary-color);">Book A Table</span>
+                    <h2 style="color: var(--light-text);">Make A Reservation</h2>
+                </div>
+
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Number of Guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Persons</option>
+                            <option value="3">3 Persons</option>
+                            <option value="4">4 Persons</option>
+                            <option value="5+">5+ Persons</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="time" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea rows="4" placeholder="Special Requests or Preferences"></textarea>
+                    </div>
+                    <div class="form-group full-width text-center">
+                        <button type="submit" class="btn btn-primary">Confirm Reservation</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <!-- Col 1: About -->
+            <div class="footer-col">
+                <a href="#" class="logo">Savoria<span>.</span></a>
+                <p>Experience the finest culinary art and delicious flavors prepared with fresh ingredients and love.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tripadvisor"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Hours -->
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                    <li><span>Monday - Friday:</span> 09:00 AM - 10:00 PM</li>
+                    <li><span>Saturday - Sunday:</span> 10:00 AM - 11:00 PM</li>
+                    <li><span>Happy Hour:</span> 04:00 PM - 06:00 PM</li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Contact -->
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Gourmet Avenue, Food City</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (555) 234-5678</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@savoriarestaurant.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Savoria Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
